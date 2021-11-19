@@ -1,0 +1,156 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: gray;
+}
+
+.container {
+  height: 600px;
+  width: 400px;
+  margin: 0 auto;
+  border: 1px solid #fff;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  position: relative;
+  background-image: url(img/buble.jpeg);
+}
+
+.head {
+  height: 80px;
+  background-color: #262830;
+  color: #08cc9a;
+  font-family: Ink Free;
+  font-size: 24px;
+  text-align: center;
+}
+
+.header {
+  margin: 15px 0;
+}
+
+.time {
+  height: 70px;
+  text-align: center;
+  background-color: #fff;
+  vertical-align: middle;
+  padding-top: 15px;
+  margin-bottom: 1px;
+  z-index: 1;
+}
+
+#tasks {
+  overflow-y: scroll;
+  height: 100vh;
+  margin-bottom: 40px;
+}
+
+.task {
+  border: 1px solid #000;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding-top: 5px;
+  min-height: 50px;
+  opacity: 0.9;
+}
+
+.check {
+  height: 15px;
+  width: 15px;
+  border: 1px solid #000;
+  border-radius: 90px;
+  box-shadow: 1px 1px 2px 2px rgba(34, 60, 80, 0.33);
+  margin-top: 10px;
+  background-color: #f5ac98;
+  opacity: 0.5;
+  cursor: pointer;
+}
+.check:hover {
+  opacity: 0.8;
+}
+
+.checkFin {
+  background-color: #48ff18;
+}
+
+.crossed {
+  text-decoration: line-through;
+}
+
+h3 {
+  font-family: Ink Free;
+}
+
+.edit,
+.delete {
+  width: 8%;
+  margin-top: 10px;
+}
+
+.title {
+  margin-top: 10px;
+  width: 60%;
+  background-color: rgb(255, 255, 255);
+}
+
+.delete {
+  opacity: 0.4;
+}
+.delete:hover {
+  opacity: 1;
+}
+
+.task_create {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border: 2px solid #000;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+#add {
+  height: 40px;
+  width: 197px;
+  background-color: #01ce97;
+  box-sizing: border-box;
+  font-family: Ink Free;
+  font-size: 28px;
+  border-color: #01ce97;
+}
+#add:hover {
+  -webkit-box-shadow: inset 0px 0px 10px 5px #ffffff;
+  box-shadow: inset 0px 0px 10px 5px #c446ff32;
+}
+
+.create {
+  height: 40px;
+  width: 197px;
+  box-sizing: border-box;
+}
+
+#template {
+  display: flex;
+  margin-top: -58px;
+  z-index: -1;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #f7f8f2de;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #01ce97;
+  border-radius: 12em;
+  height: 15px;
+  box-shadow: inset 1px 1px 10px #f3faf7;
+}
